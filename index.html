@@ -2,26 +2,87 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>برامج محمد</title>
+  <title>برمجيات محمد</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial; background-color: #f0f0f0; text-align: center; padding: 50px; }
-    h1 { color: #333; }
-    a.button {
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px 0;
+    }
+    header img {
+      height: 80px;
+      margin-bottom: 10px;
+    }
+    h1 {
+      margin: 10px 0 0;
+    }
+    .programs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+    .program {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      width: 280px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: right;
+    }
+    .program h2 {
+      margin-top: 0;
+      color: #333;
+    }
+    .program p {
+      color: #666;
+    }
+    .download-btn {
       display: inline-block;
-      margin: 10px;
-      padding: 15px 25px;
-      background-color: #28a745;
+      padding: 10px 20px;
+      background-color: #007bff;
       color: white;
       text-decoration: none;
-      border-radius: 8px;
+      border-radius: 5px;
+      margin-top: 10px;
     }
-    a.button:hover { background-color: #218838; }
+    .download-btn:hover {
+      background-color: #0056b3;
+    }
   </style>
 </head>
 <body>
-  <h1>مرحباً بك في صفحة تحميل البرامج</h1>
-  <p>اضغط على الزر لتحميل البرنامج</p>
-  
-  <a href="https://drive.google.com/your-program-link" class="button">تحميل البرنامج 1</a>
+
+  <header>
+    <!-- لو معاك لوجو، غيّر رابط الصورة هنا -->
+    <img src="https://via.placeholder.com/150x80?text=LOGO" alt="Logo">
+    <h1>مرحبا بك في صفحة البرمجيات الخاصة بمحمد</h1>
+  </header>
+
+  <section class="programs">
+    <!-- مثال على برنامج -->
+    <div class="program">
+      <h2>برنامج المحاسبة</h2>
+      <p>نظام شامل لإدارة الحسابات والفواتير.</p>
+      <a href="https://drive.google.com/your-program-link" class="download-btn" target="_blank">تحميل</a>
+    </div>
+
+    <div class="program">
+      <h2>برنامج المبيعات</h2>
+      <p>متابعة المبيعات اليومية والتقارير.</p>
+      <a href="https://drive.google.com/your-second-program" class="download-btn" target="_blank">تحميل</a>
+    </div>
+
+    <!-- تقدر تضيف أكتر حسب عدد البرامج -->
+  </section>
+
 </body>
 </html>
